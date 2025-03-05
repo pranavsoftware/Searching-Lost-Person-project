@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Fetch complaints from the server
     async function fetchComplaints() {
         try {
-            const response = await fetch("http://localhost:5000/api/complaints");
+            const response = await fetch("https://vercel2-lost-found.vercel.app/api/complaints");
             complaintsData = await response.json(); // ✅ Update global variable
             renderComplaints(complaintsData);
         } catch (error) {
