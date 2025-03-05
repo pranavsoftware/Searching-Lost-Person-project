@@ -12,7 +12,7 @@ async function uploadImage() {
     formData.append("image", file);
 
     try {
-        const response = await fetch("http://127.0.0.1:5000/api/upload", {
+        const response = await fetch("https://vercel2-lost-found.vercel.app/api/upload", {
             method: "POST",
             body: formData,
         });
